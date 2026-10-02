@@ -1,0 +1,14 @@
+Final Model: XGBoost
+Evaluated on Untouched Test Set (35,306 records)
+Calibrated Decision Threshold: 0.39
+Calibrated Low Risk Threshold: 0.15
+Calibrated High Risk Threshold: 0.61
+
+                precision    recall  f1-score   support
+
+Legitimate (0)     0.9970    0.9997    0.9983     20228
+  Phishing (1)     0.9995    0.9960    0.9978     15078
+
+      accuracy                         0.9981     35306
+     macro avg     0.9983    0.9978    0.9981     35306
+  weighted avg     0.9981    0.9981    0.9981     35306
