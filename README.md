@@ -435,3 +435,44 @@ Verify container health:
 ```bash
 curl http://localhost:8000/health
 ```
+
+---
+
+## 16. Futuristic 3D Frontend (PhishGuard AI)
+
+A premium cybersecurity command center frontend built with React, Vite, Tailwind CSS, Framer Motion, and Three.js.
+
+### Frontend Features
+* **Three.js Cyber Environment**: Interactive 3D scene with floating particle nodes, dynamic connecting lines, rotating holographic wireframe polyhedrons, grid depth, and mouse parallax. Responsive to detected threats (switches ambient scene from cyan to crimson).
+* **Cinematic 3D Scanner**: Multi-stage scanning sequence with radar rings, laser sweep, and animated analysis stages.
+* **Result Transition & Card**: 3D verdict card transformation with predicted probability, risk tier badge, latency telemetry, and celebration micro-interactions.
+* **Animated 2.5D Risk Gauge**: Spring-animated semi-circular gauge reflecting the exact model `risk_score` (0-100).
+* **Feature-Grounded Reasons**: Expandable panel decomposing detected threat indicators (HTTP scheme, IP hostnames, high entropy, keywords).
+* **URL Intelligence**: Safe client-side parsing of protocol, domain, subdomains, path, entropy, and special characters.
+* **Live Command Center & Stats**: Aggregate metrics (Total Scans, Threats Flagged, Safe URLs, Average Latency) computed directly from `/history`.
+* **Telemetry History Table**: Searchable, filterable, paginated audit trail with URL truncation and one-click copy.
+* **Engine Health Indicator**: Real-time heartbeat probe querying `GET /health`.
+
+### Running the Frontend
+```bash
+# Navigate to frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start Vite development server
+npm run dev
+
+# Or build for production
+npm run build
+npm run preview
+```
+The interface is served at: `http://localhost:5173`
+
+### Environment Configuration
+Configure backend endpoint via `frontend/.env`:
+```env
+VITE_API_BASE_URL=http://localhost:8000
+```
+
